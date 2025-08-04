@@ -152,8 +152,8 @@ export default function Component() {
         {/* Hero Section */}
         <section className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
-            <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
-              <div className="flex flex-col justify-center space-y-4">
+            <div className="mx-auto grid max-w-6xl gap-16 lg:grid-cols-[1fr_300px] lg:gap-16 xl:grid-cols-[1fr_350px] xl:gap-56">
+              <div className="flex flex-col justify-center space-y-4 ">
                 <div className="space-y-2">
                   <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
                     Hola, soy José Javier
@@ -239,10 +239,10 @@ export default function Component() {
               </div>
               <Image
                 src="/skills.jpg"
-                width="500"
-                height="400"
+                width="400"
+                height="300"
                 alt="Espacio de trabajo del desarrollador"
-                className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full"
+                className="mx-auto overflow-hidden rounded-xl object-cover object-center"
               />
             </div>
           </div>
@@ -326,13 +326,13 @@ export default function Component() {
             </div>
             <div className="mx-auto grid max-w-5xl gap-6 py-12 lg:grid-cols-2">
               <Card>
-                <CardHeader>
+                <CardHeader className="flex justify-center">
                   <Image
                     src="WebChat.jpg"
                     width="400"
-                    height="200"
+                    height="300"
                     alt="WebChat"
-                    className="w-full h-48 object-cover rounded-lg"
+                    className="max-w-full h-auto object-cover rounded-lg"
                   />
                 </CardHeader>
                 <CardContent>
@@ -357,13 +357,13 @@ export default function Component() {
                 </CardContent>
               </Card>
               <Card>
-                <CardHeader>
+                <CardHeader className="flex justify-center">
                   <Image
                     src="/ReservasApp.png"
                     width="400"
                     height="300"
                     alt="ReservasApp"
-                    className="w-full h-48 object-cover rounded-lg"
+                    className="max-w-full h-auto object-cover rounded-lg"
                   />
                 </CardHeader>
                 <CardContent>
