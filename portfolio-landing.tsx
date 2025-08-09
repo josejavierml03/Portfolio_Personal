@@ -100,11 +100,14 @@ export default function Component() {
               onClick={scrollToTop}
               className="mr-6 flex items-center space-x-2 transition-colors hover:text-foreground/80 bg-transparent border-none cursor-pointer"
             >
-              <Code className="h-6 w-6" />
-              <span className="font-bold">José Javier Méndez Lagunas</span>
+              <Code className="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6" />
+              <span className="font-bold text-xs sm:text-sm md:text-base lg:text-lg">
+                <span className="sm:hidden">José Javier</span>
+                <span className="hidden sm:inline">José Javier Méndez Lagunas</span>
+              </span>
             </button>
           </div>
-          <nav className="flex items-center space-x-6 text-sm font-medium">
+          <nav className="flex items-center space-x-2 sm:space-x-4 md:space-x-6 text-xs sm:text-sm md:text-base font-medium">
             <button
               onClick={() => scrollToSection("about")}
               className="transition-colors hover:text-foreground/80 bg-transparent border-none cursor-pointer"
@@ -130,7 +133,7 @@ export default function Component() {
               Contacto
             </button>
           </nav>
-          <div className="ml-auto flex items-center space-x-2">
+          <div className="ml-auto flex items-center space-x-1 sm:space-x-2 pl-2 sm:pl-0">
             <Button variant="ghost" size="sm" className="transition-colors hover:bg-accent" asChild>
               <Link href="https://github.com/josejavierml03" target="_blank">
                 <Github className="h-4 w-4" />
@@ -180,10 +183,10 @@ export default function Component() {
               <div className="flex items-center justify-center">
                 <Image
                   src="/image2.png"
-                  width="375"
-                  height="375"
+                  width={375}
+                  height={375}
                   alt="José Javier Méndez Lagunas - Desarrollador Junior"
-                  className="aspect-square overflow-hidden rounded-full object-cover"
+                  className="w-[225px] h-[225px] sm:w-[300px] sm:h-[300px] md:w-[375px] md:h-[375px] aspect-square overflow-hidden rounded-full object-cover"
                 />
               </div>
             </div>
@@ -238,12 +241,12 @@ export default function Component() {
                 </ul>
               </div>
               <Image
-                src="/skills.jpg"
-                width="400"
-                height="300"
-                alt="Espacio de trabajo del desarrollador"
-                className="mx-auto overflow-hidden rounded-xl object-cover object-center"
-              />
+              src="/skills.jpg"
+              width={400}
+              height={300}
+              alt="Espacio de trabajo del desarrollador"
+              className="w-[300px] h-[225px] sm:w-[350px] sm:h-[275px] md:w-[400px] md:h-[300px] mx-auto overflow-hidden rounded-xl object-cover object-center"
+            />
             </div>
           </div>
         </section>
